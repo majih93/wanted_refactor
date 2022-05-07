@@ -1,0 +1,32 @@
+.container {
+  position: relative;
+  display: flex;
+  width: 480px;
+  height: 50px;
+  border-bottom: 2px solid #edeef7;
+}
+
+.title {
+  z-index: 2;
+  box-sizing: content-box;
+  width: 160px;
+  padding-top: 10px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-align: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.underBar {
+  position: absolute;
+  bottom: -2px;
+  z-index: 1;
+  width: 160px;
+  height: 100%;
+  background: transparent;
+  border-bottom: 2px solid #39aea9;
+  transition: 0.2s;
+}
