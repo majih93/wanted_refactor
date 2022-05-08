@@ -1,0 +1,90 @@
+@use 'src/styles/constants/colors';
+
+.inputForm {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  padding: 10px;
+  background-color: #f7f7f7;
+}
+
+.inputContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.inputLabel {
+  padding-left: 5px;
+  margin-bottom: 4px;
+  font-size: 0.7rem;
+  color: colors.$GRAYA;
+}
+
+.input {
+  width: 100%;
+  height: 50px;
+  padding-right: 5px;
+  padding-left: 13px;
+  font-size: 1rem;
+  color: colors.$BLACK;
+  border: 1.5px solid colors.$GRAYA;
+  border-radius: 5px;
+  outline: none;
+
+  ::placeholder {
+    color: colors.$GRAYD;
+  }
+
+  &:focus {
+    border: 1.5px solid colors.$BLACK;
+  }
+}
+
+.errorMessage {
+  display: none;
+  padding-left: 4px;
+  font-size: 0.7rem;
+  color: colors.$RED;
+}
+
+.notValidated {
+  display: block;
+}
+
+.checkedIcon {
+  position: absolute;
+  top: 33px;
+  right: 13px;
+  width: 15px;
+  // fill: ${(props) => (props.isvalidated === "true" ? "#39aea9" : "#DDDDDD")};
+  fill: colors.$GRAYA;
+}
+
+.validated {
+  fill: colors.$POINT;
+}
+
+.pwNotShowIcon {
+  position: absolute;
+  top: 33px;
+  right: 13px;
+  fill: #444444;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.pwShowIcon {
+  position: absolute;
+  top: 33px;
+  right: 13px;
+  fill: #39aea9;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
