@@ -1,0 +1,32 @@
+@use 'src/styles/constants/colors';
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  border: 1.5px solid #d1d1d1;
+  border-radius: 3px 3px 0 0;
+}
+
+.searchInput {
+  margin-left: 5px;
+  font-size: 1rem;
+  border: none;
+
+  ::placeholder {
+    font-size: 1rem;
+    color: colors.$GRAY6;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.searchIcon {
+  width: 13px;
+  margin-right: 10px;
+  color: colors.$GRAY6;
+}
