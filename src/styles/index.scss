@@ -2,3 +2,16 @@
 @import 'base/reset';
 @import 'base/more';
 @import 'base/fonts';
+
+input[type='password']::-ms-reveal,
+input[type='password']::-ms-clear {
+  display: none;
+}
+
+input[type='range'] {
+  -webkit-appearance: none;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
